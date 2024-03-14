@@ -16,6 +16,7 @@ public class ID_Product_DAO extends GenericDAO<ID_Product> {
 
     @Override
     public List<ID_Product> findAll() {
+        
         return queryGenericDAO(ID_Product.class);
     }
 
@@ -33,5 +34,13 @@ public class ID_Product_DAO extends GenericDAO<ID_Product> {
         parameterMap.put(sql, id);
         List<ID_Product> list = queryGenericDAO(ID_Product.class, sql, parameterMap);
         return list.isEmpty() ? null : list.get(0);
+    }
+    
+    public static void main(String[] args) {
+       ID_Product_DAO dao = new ID_Product_DAO();
+        List<ID_Product> pd = dao.findAll();
+        for (ID_Product pro : pd) {
+            System.out.println(pro);
+        }
     }
 }

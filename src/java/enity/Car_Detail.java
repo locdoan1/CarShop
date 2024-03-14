@@ -9,7 +9,7 @@ package enity;
  * @author Admin
  */
 public class Car_Detail {
-   private int id;
+    private int id;
     private String name;
     private float price;
     private String image;
@@ -75,5 +75,12 @@ public class Car_Detail {
     public void setId_product(int id_product) {
         this.id_product = id_product;
     }
+
+    @Override
+    public String toString() {
+        return "Car_Detail{" + "id=" + id + ", name=" + name + ", price=" + price + ", image=" + image + ", description=" + description + ", id_product=" + id_product + '}';
+    }
+    
+    
     
 }

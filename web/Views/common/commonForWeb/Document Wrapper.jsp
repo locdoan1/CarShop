@@ -18,9 +18,9 @@
 					<div class="col-xs-12 col-sm-6 col-md-7">
 						<ul class="list-inline pull-right top-links">
 							<li>
-								<a href="#">Login</a>
+								<a href="login">Login</a>
 								
-								<a href="#">Register</a>
+								<a href="register">Register</a>
 							</li>
 							
 							
@@ -63,10 +63,10 @@
 							<ul class="dropdown-menu">
 								
 								<li>
-									<a href="login.html">login</a>
+									<a href="login">login</a>
 								</li>
 								<li>
-									<a href="register.html">register</a>
+									<a href="register">register</a>
 								</li>
 							</ul>
 						</li>

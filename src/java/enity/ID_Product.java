@@ -35,5 +35,12 @@ public class ID_Product {
     public void setName_product(String name_product) {
         this.name_product = name_product;
     }
+
+    @Override
+    public String toString() {
+        return "ID_Product{" + "id_product=" + id_product + ", name_product=" + name_product + '}';
+    }
+    
+    
     
 }

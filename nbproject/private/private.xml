@@ -2,26 +2,29 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="Prj301chuan">
+        <group>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/common/commonForWeb/Document%20Wrapper.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/CarDetailController.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/constant/CommonConstant.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/About.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/AboutController.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/index.html</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/ContactController.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/Car_Detail_DAO.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/enity/PageController.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/enity/ID_Product.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/Home.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/GenericDAO.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/common/commonForWeb/Document%20Wrapper.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/HomeController.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/ID_Product_DAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/GenericDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/DBContext.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/ProductDetail.jsp</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/admin/DashBoardMain.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/Car_Detail_DAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/AboutController.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/enity/Car_Detail.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/Home.jsp</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/Contact.jsp</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/common/commonForWeb/Footer.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/dal/DBContext.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/CarDetailController.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/web/Views/ProductDetail.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/controller/HomeController.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/AssignmentPRJ301_Complete/src/java/enity/ID_Product.java</file>
         </group>
+        <group name="Lab211"/>
+        <group name="Prj301chuan"/>
     </open-files>
 </project-private>
