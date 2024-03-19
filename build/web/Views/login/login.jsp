@@ -47,7 +47,7 @@
         <!-- Document Wrapper
                 ============================================= -->
         <div id="wrapper" class="wrapper clearfix">
-            <jsp:include page="../common/commonForWeb/Document Wrapper.jsp"></jsp:include>
+            
 
                 <!-- Page Title
         ============================================= -->
@@ -62,7 +62,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-6">
                                 <ol class="breadcrumb text-right">
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a>Home</a>
                                     </li>
                                     <li class="active">login</li>
                                 </ol>
@@ -79,6 +79,9 @@
 
                 <!-- Signin#1 Section
         ============================================= -->
+                 <a style="color: red ; margin-top: 40px ;     margin-left: 364px;">
+                                ${error}
+                            </a> 
                 <section id="signIn" class="sign">
                     <div class="container">
                         <div class="row">
@@ -86,55 +89,57 @@
                                 <div class="text-center">
                                     <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target=".login-modal-lg">sign in button</button>
                                 </div>
-                                <div class="modal model-sign fade login-modal-lg" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <p>Welcome Back</p>
-                                                <h6>Login Area</h6>
-                                                <form action="login" method="POST">
-                                                    <div class="sign-form">
-                                                        <form class="mb-0">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" id="username" placeholder="UserName">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="password" class="form-control" id="pwd" placeholder="Password">
-                                                            </div>
-                                                            <div class="checkbox pull-left">
-                                                                <label>
-                                                                    <input type="checkbox">
-                                                                    Remember me</label>
-                                                            </div>
-
-                                                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-                                                        </form>
-                                                        <div class="form-links text-center">
-                                                            <a href="register">Create New Account</a>
+                               
+                            <div class="modal model-sign fade login-modal-lg" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <p>Welcome Back</p>
+                                            <h6>Login Area</h6>
+                                            <form action="login?action=login" method="POST">
+                                                <div class="sign-form">
+                                                    <form class="mb-0">
+                                                        <div class="form-group">
+                                                            <input name="username" type="text" class="form-control" id="username" placeholder="UserName" autocapitalize="none" >
                                                         </div>
-                                                    </div>
-                                                </form>
+                                                        <div class="form-group">
+                                                            <input name="password" type="password" class="form-control" id="pwd" placeholder="Password" autocapitalize="none">
+                                                        </div>
+                                                        <div class="checkbox pull-left">
+                                                            <label>
+                                                                <input type="checkbox">
+                                                                Remember me
+                                                            </label>
+                                                        </div>
 
-                                            </div>
+                                                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                                    </form>
+                                                    <div class="form-links text-center">
+                                                        <a href="register">Create New Account</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+
                                         </div>
-                                        <!-- /.modal-content -->
                                     </div>
+                                    <!-- /.modal-content -->
                                 </div>
                             </div>
-                            <!-- .col-md-12 end -->
                         </div>
-                        <!-- .row end -->
+                        <!-- .col-md-12 end -->
                     </div>
-                    <!-- .container end -->
-                </section>
-                <!-- #signIn end -->
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+            <!-- #signIn end -->
 
-                <div class="clearfix mb-150"></div>
+            <div class="clearfix mb-150"></div>
 
 
 
-                <!-- Footer Widget
-        ============================================= -->
+            <!-- Footer Widget
+    ============================================= -->
             <jsp:include page="../common/commonForWeb/Footer.jsp"></jsp:include>
                 <!-- .footer-widget end -->
 

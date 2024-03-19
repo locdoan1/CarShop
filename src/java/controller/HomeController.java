@@ -10,6 +10,7 @@ import dal.ID_Product_DAO;
 import enity.Car_Detail;
 import enity.ID_Product;
 import enity.PageController;
+import enity.User;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -69,14 +70,14 @@ public class HomeController extends HttpServlet {
         HttpSession session = request.getSession();
         PageController pageController = new PageController();
         List<Car_Detail> listCar_Detail = searchByProduct(request,pageController);
-
+       
         List<ID_Product> listProduct = iD_Product_DAO.findAll();
 
         if (listCar_Detail == null) {
             listCar_Detail = car_Detail_DAO.findAll();
         }
-
-        session.setAttribute("listCar_Detail", listCar_Detail);
+        session.setAttribute("userCheck1", session.getAttribute("userCheck"));
+        session.setAttribute(CommonConstant.SESSION_CAR1, listCar_Detail);
         session.setAttribute("listProduct", listProduct);
         request.setAttribute("pageControl", pageController);
         request.getRequestDispatcher("Views/Home.jsp").forward(request, response);
@@ -93,7 +94,7 @@ public class HomeController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.sendRedirect("home");
     }
 
     /**
@@ -137,7 +138,7 @@ public class HomeController extends HttpServlet {
     
             default:
               listCar_Detail = car_Detail_DAO.findAll12(page);
-              totalRecored = 50;
+              totalRecored = 4;
               pageController.setUrlPattern(urlPattern + "?");
         }
         

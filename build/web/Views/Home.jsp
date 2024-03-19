@@ -56,6 +56,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div style="display: inline-block">
+
                                     <!-- .product-num end -->
                                 <c:forEach items="${listProduct}" var="listProduct">
                                     <div class="left-menu mb-30" style="margin-left: 80px ;display: inline-block ">
@@ -70,16 +71,24 @@
                             <!-- .product-options end -->
                         </div>
                         <!-- .col-md-12 end -->
+
+
                         <div class="row">
                             <c:forEach items="${listCar_Detail}" var="lidetail" >
 
                                 <!-- Product #1 -->
                                 <div class="col-xs-12 col-sm-6 col-md-3 product">
                                     <div class="product-img">
-                                        <img  src="${pageContext.request.contextPath}/images/shop/grid/1.jpg" alt="Product"/>
+                                        <img  src="${lidetail.image}"  alt="Product" style="height:  300px ; width: 300px"/>
+
                                         <div class="product-hover">
                                             <div class="product-action">
-                                                <a class="btn btn-primary" href="#">Add To Cart</a>
+
+                                                <form action="payment?action=addtocart" method="POST">
+                                                    <input type="hidden" name = "idd" value="${lidetail.id}">
+                                                    <a class="btn btn-primary" href="#" onclick="return this.closest('form').submit();">Add To Cart</a>
+
+                                                </form>
                                                 <a class="btn btn-primary" href="cardetail?idz=${lidetail.id}">Item Details</a>
                                             </div>
                                         </div>
@@ -110,18 +119,18 @@
                         <!-- .row end -->
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <ul class="pagination">
-                            <c:forEach begin="1" end="${pageControl.totalPage}" var="pageNumber">
+                                <c:forEach begin="1" end="${pageControl.totalPage}" var="pageNumber">
                                     <li class="active">
                                         <a href="${pageControl.urlPattern}page=${pageNumber}">${pageNumber}</a>
                                     </li>
-                                    
-                                  
+
+
                                 </c:forEach>
-                                      <li>
-                                        <a href="#" aria-label="Next">
-                                            <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-                                        </a>
-                                    </li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <!-- .col-md-12 end -->

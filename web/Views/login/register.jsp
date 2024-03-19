@@ -42,7 +42,7 @@
         <!-- Document Wrapper
                 ============================================= -->
         <div id="wrapper" class="wrapper clearfix">
-            <jsp:include page="../common/commonForWeb/Document Wrapper.jsp"></jsp:include>
+          
 
                 <!-- Page Title
         ============================================= -->
@@ -80,39 +80,41 @@
                                 <div class="text-center">
                                     <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target=".login-modal-lg">register button</button>
                                 </div>
+                                <div>${succes}</div>
                                 <div class="modal model-sign fade login-modal-lg" tabindex="-1" role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-body">
                                                 <p>Hello</p>
                                                 <h6>Register Form</h6>
-                                                <div class="register-form">
-                                                    <form class="mb-0">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="username" placeholder="UserName">
+                                                <form action="register" method="POST">
+
+                                                    <div class="register-form">
+                                                        <form class="mb-0">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" id="username" placeholder="UserName" name="username">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" id="pwd" placeholder="Password" name="password">
+                                                            </div>
+                                                            
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox">
+                                                                    I Agree To
+                                                                    <a href="#">The Terms Of Use ?</a>
+                                                                </label>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary btn-block mt-30">Register</button>
+                                                        </form>
+                                                        <div class="form-links text-center">
+                                                            <a href="login">Have an account? Login Here</a>
                                                         </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="email" placeholder="Email">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="password" class="form-control" id="pwd" placeholder="Password">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="password" class="form-control" id="pwdc" placeholder="Confirm Password">
-                                                        </div>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                I Agree To
-                                                                <a href="#">The Terms Of Use ?</a>
-                                                            </label>
-                                                        </div>
-                                                        <button type="submit" class="btn btn-primary btn-block mt-30">Register</button>
-                                                    </form>
-                                                    <div class="form-links text-center">
-                                                        <a href="login">Have an account? Login Here</a>
                                                     </div>
-                                                </div>
+                                                </form>
                                             </div>
                                         </div>
                                         <!-- /.modal-content -->

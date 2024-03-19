@@ -6,11 +6,13 @@ package dal;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.security.Timestamp;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -168,6 +170,13 @@ public abstract class GenericDAO<T> extends DBContext {
     private static Object getFieldValue(ResultSet rs, Field field) throws SQLException {
         Class<?> fieldType = field.getType();
         String fieldName = field.getName();
+
+        if (Collections.class.isAssignableFrom(fieldType)) {
+            return null;
+        } else if (Map.class.isAssignableFrom(fieldType)) {
+            return null;
+        }
+
         // Kiểm tra kiểu dữ liệu và convert sang đúng kiểu
         if (fieldType == String.class) {
             return rs.getString(fieldName);
@@ -181,6 +190,8 @@ public abstract class GenericDAO<T> extends DBContext {
             return rs.getBoolean(fieldName);
         } else if (fieldType == float.class || fieldType == Float.class) {
             return rs.getFloat(fieldName);
+        } else if (fieldType == Timestamp.class) {
+            return rs.getTimestamp(fieldName);
         } else {
             return rs.getObject(fieldName);
 

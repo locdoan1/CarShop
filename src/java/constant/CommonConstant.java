@@ -15,4 +15,7 @@ public class CommonConstant {
     public static String SESSION_PRODUCT = "list_pro";
     public static String SESSION_CAR_HOME = "list_car_home";
     public static String SESSION_PRODUCT_HOME = "list_pro_home";
+    public static final String SESSION_ACCOUNT = "userCheck2";
+
+    public static String SESSION_CAR1 = "listCar_Detail";
 }
